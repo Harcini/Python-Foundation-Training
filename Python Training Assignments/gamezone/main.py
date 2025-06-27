@@ -1,0 +1,53 @@
+from gaming_utils import *
+
+def menu():
+    while True:
+        print("\n🎮 Gaming Zone Main Menu")
+        print("1. Add Game")
+        print("2. Register Member")
+        print("3. Log Gameplay")
+        print("4. Delete Member (No Games Played)")
+        print("5. Games with Charge > ₹100/hr")
+        print("6. Count Games by Type")
+        print("7. Members with < 10 Hours Left")
+        print("8. Members Who Played > 2 Games")
+        print("9. Total Hours Remaining by Membership Type")
+        print("10. Total Income from Gameplay")
+        print("11. Most Active Member")
+        print("12. Top 3 Most Played Games")
+        print("13. Hours Played Per Member Per Game")
+        print("14. Log Gameplay with Name & Game")
+        print("15. Members Who Used > 75% of Hours")
+        print("16. Full Member Report")
+        print("17. Members Who Never Played")
+        print("18. View All Games")
+        print("19. View All Members")
+        print("20. Exit")
+        choice = input("Enter choice: ")
+
+        if choice == '1': add_game()
+        elif choice == '2': register_member()
+        elif choice == '3': log_gameplay()
+        elif choice == '4': delete_member_if_not_played()
+        elif choice == '5': games_above_100()
+        elif choice == '6': count_games_by_type()
+        elif choice == '7': members_below_10_hours()
+        elif choice == '8': members_played_more_than_two_games()
+        elif choice == '9': total_hours_remaining_by_type()
+        elif choice == '10': total_income()
+        elif choice == '11': most_active_member()
+        elif choice == '12': top_3_games()
+        elif choice == '13': report_member_gameplay()
+        elif choice == '14': log_gameplay()
+        elif choice == '15': members_over_75_percent()
+        elif choice == '16': full_member_report()
+        elif choice == '17': members_never_played()
+        elif choice == '18': view_games()
+        elif choice == '19': view_members()
+        elif choice == '20':
+            print("Exiting. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Try again.")
+
+menu()
